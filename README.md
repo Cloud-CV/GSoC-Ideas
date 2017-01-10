@@ -1,4 +1,4 @@
-# CloudCV GSoC Ideas Page
+# CloudCV GSoC Ideas
 
 ## Development
 This site is built with [Jekyll](https://github.com/jekyll/jekyll) and [Bootstrap](https://github.com/twbs/bootstrap).
@@ -9,5 +9,5 @@ This site is built with [Jekyll](https://github.com/jekyll/jekyll) and [Bootstra
 3. Run ``jekyll serve`` and check in the browser on ``0.0.0.0:4000`` if the site looks like expected
 4. Send a Pull Request
 
-## Acknowledgements
-Based on the OpenSUSE theme.
+### Acknowledgements
+Based on the OpenSUSE mentoring project.
