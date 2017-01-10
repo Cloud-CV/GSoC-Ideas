@@ -1,0 +1,19 @@
+<section id="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Google Summer of Code 2016 Projects</h2>
+        <div class="row">
+          {% for project in site.gsoc_current limit:3 %}
+            {% include project.html %}
+          {% endfor %}
+        </div>
+        <div class="row">
+          {% for project in site.gsoc_current offset:3 %}
+            {% include project.html %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

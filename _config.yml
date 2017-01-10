@@ -1,0 +1,24 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+title: CloudCV
+subTitle: 
+email: virajp@vt.edu
+author: Viraj Prabhu
+description: The CloudCV mentoring project collects ideas for Google Summer of Code.
+copyright: 'Copyright &copy; 2017 CloudCV. All Rights Reserved.'
+github_organization: Cloud-CV
+github_repository: GSoC-Ideas
+gems:
+  - jekyll-redirect-from
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+collections:
+- gsoc_current
