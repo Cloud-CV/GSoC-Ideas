@@ -60,7 +60,7 @@ $(document).ready(function () {
       });
     }
     else{
-      $('.project-placeholder').html("Sorry but it seems like you exceeded the allowed number of requests. Please have a look at <a href='https://github.com/openSUSE/mentoring/issues'>our issues</a>!")
+      $('.project-placeholder').html("Sorry but it seems like you exceeded the allowed number of requests. Please have a look at <a href='https://github.com/Cloud-CV/GSoC-Ideas'>our issues</a>!")
     }
   });
 });

@@ -10,4 +10,4 @@ This site is built with [Jekyll](https://github.com/jekyll/jekyll) and [Bootstra
 4. Send a Pull Request
 
 ### Acknowledgements
-Based on the OpenSUSE mentoring project.
+Based on the OpenSUSE's excellent mentoring project.
