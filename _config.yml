@@ -8,8 +8,10 @@ email: virajp@vt.edu
 author: Viraj Prabhu
 description: The CloudCV mentoring project collects ideas for Google Summer of Code.
 copyright: 'Copyright &copy; 2017 CloudCV. All Rights Reserved.'
-baseurl: /GSoC-Ideas
-github_organization: Cloud-CV
+
+baseurl: ""
+url: "http://gsoc.cloudcv.org"
+
 github_repository: GSoC-Ideas
 gems:
   - jekyll-redirect-from
