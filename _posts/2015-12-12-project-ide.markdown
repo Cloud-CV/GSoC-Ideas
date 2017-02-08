@@ -3,7 +3,7 @@ layout: default
 img: ide.png
 title: IDE
 type: project
-technologies: [React, Django]
+technologies: [ReactJS, Python, Django]
 website:
 github: https://github.com/Cloud-CV/IDE
 description: |

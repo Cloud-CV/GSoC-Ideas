@@ -12,6 +12,7 @@ copyright: 'Copyright &copy; 2017 CloudCV. All Rights Reserved.'
 baseurl: ""
 url: "http://gsoc.cloudcv.org"
 
+github_organization: Cloud-CV
 github_repository: GSoC-Ideas
 gems:
   - jekyll-redirect-from
