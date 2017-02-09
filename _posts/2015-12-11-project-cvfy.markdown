@@ -1,12 +1,12 @@
 ---
 layout: default
 img: cvfy.png
-title: CloudCVfy
+title: Origami
 type: project
 technologies: [ReactJS, Python, Flask, Docker]
-website: 
+website: http://cvfy.cloudcv.org
 github: https://github.com/Cloud-CV/cvfy-frontend
 description: |
 ---
 
-CloudCVfy is a project to automatically build an interactive web-based demo for your machine learning model or library.
+Origami, earlier known as CVFY, is a project to automatically build an interactive web-based demo for your machine learning model or library.

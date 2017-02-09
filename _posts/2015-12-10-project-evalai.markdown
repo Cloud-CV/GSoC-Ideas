@@ -4,7 +4,7 @@ img: evalai.png
 title: EvalAI
 type: project
 technologies: [Python, Django, AngularJS, RabbitMQ, Docker, AWS]
-website: 
+website: http://evalai.cloudcv.org
 github: https://github.com/Cloud-CV/EvalAI
 description: |
 ---
