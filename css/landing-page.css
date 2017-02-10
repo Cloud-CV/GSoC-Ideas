@@ -21,6 +21,11 @@ h6 {
     font-weight: 700;
 }
 
+.valign-center {
+    display: flex;
+    align-items: center;
+}
+
 .lead {
     font-size: 18px;
     font-weight: 400;
