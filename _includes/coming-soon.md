@@ -1,1 +1,1 @@
-We are working on the project ideas. We will update it soon. If you have a new idea, email us at <a href="#"><b>team@cloudcv.org</b></a>
+We are working on the project ideas. We will update it soon. If you have a new idea, feel free to add an issue to our <a href="https://github.com/Cloud-CV/GSoC-Ideas">GSoC Project Ideas repository</a>
