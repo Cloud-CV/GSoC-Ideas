@@ -20,23 +20,6 @@ redirect_from:
   </div>
 </section>
 
-<div id="projects"></div>
-
-<!-- Coming Soon Section -->
-<section id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2" id="mentee-guidelines">
-        <h2 class="text-center">Project Ideas</h2>
-        <p class="lead">
-        {% include coming-soon.md %}
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Page Content -->
 {% for post in site.posts reversed %}
   {% if post.type == 'project-2018' %}
       {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
@@ -57,7 +40,7 @@ redirect_from:
                         </div>
                         <p class="{{ post.title }}-placeholder project-placeholder">Please wait for loading the projects ...</p>
                         <div>
-                            <table style="display: none" data-url="https://api.github.com/repos/{{ site.github_organization }}/{{ site.github_repository }}/issues" class="table {{ post.title }}-table">
+                            <table style="display: none" data-url="https://api.github.com/repos/{{ site.github_organization }}/{{ site.github_repository }}/issues?state=open&labels=GSoC-2018" class="table {{ post.title }}-table">
                                 <caption>Participate in the issue corresponding to this project to get started:</caption>
                                 <thead>
                                 <tr>
@@ -75,7 +58,7 @@ redirect_from:
                         </div>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                        <img class="img-responsive" src="img/projects/{{ post.img }}" alt="">
+                        <img class="img-responsive" src="../img/projects/{{ post.img }}" alt="">
                     </div>
                 </div>
             </div>
@@ -97,7 +80,7 @@ redirect_from:
                         <div class="lead">{{ post.content }}</div>
                         <p class="{{ post.title }}-placeholder project-placeholder">Please wait for loading the projects ...</p>
                         <div>
-                            <table style="display: none" data-url="https://api.github.com/repos/{{ site.github_organization }}/{{ site.github_repository }}/issues?state=open" class="table {{ post.title }}-table">
+                            <table style="display: none" data-url="https://api.github.com/repos/{{ site.github_organization }}/{{ site.github_repository }}/issues?state=open&labels=GSoC-2018" class="table {{ post.title }}-table">
                                 <caption>Participate in the issue corresponding to this project to get started:</caption>
                                 <thead>
                                 <tr>
