@@ -4,7 +4,7 @@ img: fabrik.png
 title: Fabrik
 type: project-2018
 technologies: [ReactJS, Python, Django, Tensorflow, PyTorch, Keras, Docker]
-website: http://ide.cloudcv.org
+website: http://fabrik.cloudcv.org
 github: https://github.com/Cloud-CV/Fabrik
 description: |
 ---
