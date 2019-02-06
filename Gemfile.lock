@@ -26,7 +26,7 @@ GEM
     mercenary (0.3.6)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
-      ffi (>= 1.9.24)
+      ffi (>= 1.10.0)
     rouge (1.10.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
