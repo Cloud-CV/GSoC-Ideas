@@ -21,18 +21,20 @@ $(document).ready(function () {
           var row = "<tr><td><a href='#eventModal" + index + "' data-toggle='modal'>" + this.title + "</a>" +
               " together with <a href='" + mentor_url + "'><i class='fa fa-fw fa-github'></i>" + mentor + "</a></td>" +
               "<td><a href='" + this.html_url + "' type='button' class='btn btn-success btn-xs'>Yes, let's do it</a></td></tr>";
-
-          console.log(row)
-          console.log(this.labels)
+          
+          var title = this.title;
+          console.log("TITLE IS", title);
 
           $.each(this.labels, function () {
-            console.log(this.name)
-            $('.' + this.name + '-table tbody').append(row);
-            $('.' + this.name + '-table').show();
-            $('.' + this.name + '-placeholder').remove();
+                var name = this.name.split(' ');
+                name = name[name.length -1];
+                $('.' + name + '-table tbody').append(row);
+                $('.' + name + '-table').show();
+                $('.' + name + '-placeholder').remove();
           });
 
           gsoc_hint = get_gsoc_hint(this.labels);
+          console.log(gsoc_hint);
 
           // Add the modal for the project
           var modal = "<div class='portfolio-modal modal fade' id='eventModal" + index + "' tabindex='-1' role='dialog' aria-hidden='true'> <div class='modal-content'>" +
@@ -69,14 +71,14 @@ function get_gsoc_hint(labels){
   result = "";
   current_url = window.location.href;
   for(var i = 0; i < labels.length; i++) {
-    if (labels[i].name == 'GSoC-2018') {
+    if (labels[i].name == 'GSoC-2019') {
       if(current_url.indexOf('gsoc') > -1) {
         url = current_url;
       }
       else{
         url = current_url + "/gsoc";
       }
-      result = "<p>You can do this project as part of the Google Summer of Code program. Click <a href='" + url + "'>here</a> for more information.</p>"
+      result = "<p>You can do this project as part of the Google Summer of Code program.</p>"
       break;
     }
   }

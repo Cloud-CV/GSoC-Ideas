@@ -17,8 +17,32 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    font-weight: 300;
+}
+
+.btn-success {
+    background-color: #309630;
+}
+
+.btn {
+    font-weight: 300;
+}
+
+.label-info {
+    font-weight: 300;
+    background-color: #428bca;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
 }
 
 .valign-center {
@@ -28,7 +52,7 @@ h6 {
 
 .lead {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .intro-header {
@@ -101,7 +125,6 @@ h6 {
 .network-name {
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 400;
     letter-spacing: 2px;
 }
 
@@ -113,7 +136,7 @@ section {
   padding: 20px 0 20px;
 }
 section:nth-of-type(odd) {
-  background: #f8f8f8;
+  background: white;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
 }

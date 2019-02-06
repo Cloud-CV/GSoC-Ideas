@@ -1,0 +1,11 @@
+---
+layout: default
+img: new-ui.png
+title:  New Frontend for EvalAI using Angular 5 
+type: project-2019
+technologies: [Angular, Typescript, HTML, CSS]
+website: https://evalai.cloudcv.org
+github: https://github.com/Cloud-CV/EvalAI
+description: |
+---
+EvalAI’s current frontend is setup using Angular 1 which is not maintained by the community actively. Angular in the later versions support really nice features like better SEO, client-side rendering, etc. We want to migrate the current codebase in Angular 5 with a new design and achieve feature-parity. The first half of the summer will focus on adding the existing features from the older version with a new UI, while the latter half will focus on building an exhaustive analytics platform for challenge host and participants. The tasks will also include adding the UI for hosts and participants for reinforcement learning based challenges.
