@@ -1,7 +1,7 @@
 ---
 layout: default
 img: new-ui.png
-title:  Streamlining challenge creation on EvalAI 
+title:  Streamlining Challenge Creation on EvalAI 
 type: project-2020
 technologies: [Python, Django, Django Rest Framework, CI/CD tool]
 website: https://evalai.cloudcv.org
