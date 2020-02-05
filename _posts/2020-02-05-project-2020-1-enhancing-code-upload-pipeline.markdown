@@ -1,6 +1,6 @@
 ---
 layout: default
-img: new-ui.png
+img: enhance-code-upload.png
 title:  Enhancements in Code Upload Pipeline 
 type: project-2020
 technologies: [Docker, Kubernetes, AWS, Django, DRF]
