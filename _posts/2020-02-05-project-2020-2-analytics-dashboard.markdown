@@ -1,7 +1,7 @@
 ---
 layout: default
 img: analytics-dashboard.jpg
-title:  Analytics dashboards for EvalAI Users
+title:  Analytics Dashboard for EvalAI Users
 type: project-2020
 technologies: [Angular 7, Django, Django Rest Framework, D3.js]
 website: https://evalai.cloudcv.org
