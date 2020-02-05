@@ -1,7 +1,7 @@
 ---
 layout: default
 img: new-ui.png
-title:  Enhancements in code upload pipeline 
+title:  Enhancements in Code Upload Pipeline 
 type: project-2020
 technologies: [Docker, Kubernetes, AWS, Django, DRF]
 website: https://evalai.cloudcv.org
