@@ -24,6 +24,7 @@ $(document).ready(function () {
           
           var title = this.title;
           console.log("TITLE IS", title);
+          console.log("Assingme: " + this.mentor);
 
           $.each(this.labels, function () {
                 var name = this.name.split(' ');
@@ -71,7 +72,7 @@ function get_gsoc_hint(labels){
   result = "";
   current_url = window.location.href;
   for(var i = 0; i < labels.length; i++) {
-    if (labels[i].name == 'GSoC-2019') {
+    if (labels[i].name == 'GSoC-2021') {
       if(current_url.indexOf('gsoc') > -1) {
         url = current_url;
       }
