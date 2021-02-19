@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GSOC - 2021
+title: GSOC - 2020
 redirect_from:
   - /mentor/index.html
 ---
@@ -21,7 +21,7 @@ redirect_from:
 </section>
 
 {% for post in site.posts reversed %}
-  {% if post.type == 'project-2021' %}
+  {% if post.type == 'project-2020' %}
       {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
         {% if thecycle == 'odd' %}
         <section>
@@ -40,7 +40,7 @@ redirect_from:
                         </div>
                         <p class="{{ post.title }}-placeholder project-placeholder">Please wait for loading the projects ...</p>
                         <div>
-                            <table style="display: none" data-url="https://api.github.com/repos/{{ site.github_organization }}/{{ site.github_repository }}/issues?state=open&labels=GSoC-2021" class="table {{ post.title }}-table">
+                            <table style="display: none" data-url="https://api.github.com/repos/{{ site.github_organization }}/{{ site.github_repository }}/issues?state=open&labels=GSoC-2020" class="table {{ post.title }}-table">
                                 <caption class="fw-300">Participate in the issue corresponding to this project to get started</caption>
                                 <thead>
                                 <tr>
@@ -80,7 +80,7 @@ redirect_from:
                         <div class="lead">{{ post.content }}</div>
                         <p class="{{ post.title }}-placeholder project-placeholder">Please wait for loading the projects ...</p>
                         <div>
-                            <table style="display: none" data-url="https://api.github.com/repos/{{ site.github_organization }}/{{ site.github_repository }}/issues?state=open&labels=GSoC-2021" class="table {{ post.title }}-table">
+                            <table style="display: none" data-url="https://api.github.com/repos/{{ site.github_organization }}/{{ site.github_repository }}/issues?state=open&labels=GSoC-2020" class="table {{ post.title }}-table">
                                 <caption class="fw-300">Participate in the issue corresponding to this project to get started</caption>
                                 <thead>
                                 <tr>
