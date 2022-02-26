@@ -4,7 +4,7 @@ img: analytics-dashboard.jpg
 title:  Analytics dashboards for challenge hosts and participants
 type: project-2022
 technologies: [Angular 7, Django, Django Rest Framework, D3.js]
-website: https://evalai.cloudcv.org
+website: https://eval.ai
 github: https://github.com/Cloud-CV/EvalAI
 description: |
 ---
