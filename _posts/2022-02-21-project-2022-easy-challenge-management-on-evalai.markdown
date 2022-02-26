@@ -4,7 +4,7 @@ img: streamlining-challenge-creation.jpg
 title:  Easy challenge management on EvalAI
 type: project-2022
 technologies: [Angular, Django, AWS]
-website: https://evalai.cloudcv.org
+website: https://eval.ai
 github: https://github.com/Cloud-CV/EvalAI
 description: |
 ---
