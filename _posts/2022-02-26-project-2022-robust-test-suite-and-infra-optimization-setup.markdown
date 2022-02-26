@@ -1,7 +1,7 @@
 ---
 layout: default
 img: monitoring-setup-for-evalai-admins.png
-title:  Robust test suite on EvalAI
+title:  Robust test suite and infra optimization setup
 type: project-2022
 technologies: [Django, AWS]
 website: https://eval.ai
