@@ -1,6 +1,6 @@
 ---
 layout: default
-img: search-tag-filter.jpg
+img: search-tag-filter.png
 title:  Improvements in EvalAI User Interface
 type: project-2023
 technologies: [Angular, Django]
