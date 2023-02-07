@@ -1,7 +1,7 @@
 ---
 layout: default
 img: evalai_gradio.png
-title:  Collecting Adversarial Data using Gradio and EvalAI
+title:  Adversarial Data using Gradio and EvalAI
 type: project-2023
 technologies: [Django, AWS, DevOps]
 website: https://eval.ai
