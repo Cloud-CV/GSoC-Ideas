@@ -1,6 +1,6 @@
 ---
 layout: default
-img: streamlining-challenge-creation.jpg
+img: search-tag-filter.jpg
 title:  Improvements in EvalAI User Interface
 type: project-2023
 technologies: [Angular, Django]

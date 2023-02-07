@@ -1,6 +1,6 @@
 ---
 layout: default
-img: monitoring-setup-for-evalai-admins.png
+img: ec2-auto-scaling.png
 title:  Evaluation Infrastructure Optimization
 type: project-2023
 technologies: [Django, AWS]
