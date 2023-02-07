@@ -1,7 +1,7 @@
 ---
 layout: default
 img: analytics-dashboard.jpg
-title:  Analytics Dashboards for Challenge Hosts and Participants
+title:  Analytics Dashboards for EvalAI Users
 type: project-2023
 technologies: [Angular 7, Django, Django Rest Framework, D3.js]
 website: https://eval.ai
