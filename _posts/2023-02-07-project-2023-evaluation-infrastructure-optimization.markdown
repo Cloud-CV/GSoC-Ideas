@@ -12,4 +12,4 @@ This project aims to enhance EvalAI's functionalities through automating large w
 
 - To automate large worker deployment processes on EvalAI using AWS EC2 instances or spot instances, make challenge management seamless and less reliant on the admins. We want to reduce the dependency of challenge hosts on EvalAI admins.
 
-- To make EvalAI more reliable and error-free by incorporating tests for different frontend and backend components. This will include adding unit tests for the API suite, prediction upload evaluation workers, code upload evaluation workers (on EKS), and integration tests for end-to-end testing of all components.
+- To make EvalAI more reliable and error-free by incorporating tests for different frontend and backend components. Having robust tests prevents making code-breaking changes to the codebase. This task will include adding unit tests for the API suite, prediction upload evaluation workers, code upload evaluation workers (on EKS), and integration tests for end-to-end testing of all components.
