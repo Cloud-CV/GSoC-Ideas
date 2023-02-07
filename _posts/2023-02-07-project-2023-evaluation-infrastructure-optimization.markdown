@@ -3,7 +3,7 @@ layout: default
 img: ec2-auto-scaling.png
 title:  Evaluation Infrastructure Optimization
 type: project-2023
-technologies: [Django, AWS]
+technologies: [Angular, Django, AWS]
 website: https://eval.ai
 github: https://github.com/Cloud-CV/EvalAI
 description: |
