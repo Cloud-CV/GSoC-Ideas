@@ -73,7 +73,7 @@ function get_gsoc_hint(labels){
   result = "";
   current_url = window.location.href;
   for(var i = 0; i < labels.length; i++) {
-    if (labels[i].name == 'GSoC-2022') {
+    if (labels[i].name == 'GSoC-2023') {
       if(current_url.indexOf('gsoc') > -1) {
         url = current_url;
       }
