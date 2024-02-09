@@ -1,0 +1,112 @@
+---
+layout: default
+title: GSOC - 2022
+redirect_from:
+  - /mentor/index.html
+---
+
+{% include header.html %}
+
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2" id="mentee-guidelines">
+        <h2 class="text-center fw-400">About CloudCV</h2>
+        <p class="lead">
+          {% include teaser.md %}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% for post in site.posts reversed %}
+  {% if post.type == 'project-2022' %}
+      {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+        {% if thecycle == 'odd' %}
+        <section>
+            <div class="container">
+                <div class="row valign-center">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading fw-400">{{ post.title }}</h2>
+                        <h4>
+                            {% for technology in post.technologies %}
+                            <span class="label label-info">{{ technology }}</span>
+                            {% endfor %}
+                        </h4>
+                        <div class="lead">{{ post.content }}
+                        </div>
+                        <p class="{{ post.title }}-placeholder project-placeholder">Please wait for loading the projects ...</p>
+                        <div>
+                            <table style="display: none" data-url="https://api.github.com/repos/{{ site.github_organization }}/{{ site.github_repository }}/issues?state=open&labels=GSoC-2022" class="table {{ post.title }}-table">
+                                <caption class="fw-300">Participate in the issue corresponding to this project to get started</caption>
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center">
+                            <a href="{{ post.website }}"><i class="fa fa-rss-square fa-2x icon-mentoring"></i></a>
+                            <a href="{{ post.github }}"><i class="fa fa-github fa-2x icon-mentoring"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-lg-offset-1 col-sm-6">
+                        <img class="img-responsive" src="../img/projects/{{ post.img }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        {% else %}
+        <section>
+            <div class="container">
+                <div class="row valign-center">
+                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">{{ post.title }}</h2>
+                        <h4>
+                            {% for technology in post.technologies %}
+                            <span class="label label-info">{{ technology }}</span>
+                            {% endfor %}
+                        </h4>
+                        <div class="lead">{{ post.content }}</div>
+                        <p class="{{ post.title }}-placeholder project-placeholder">Please wait for loading the projects ...</p>
+                        <div>
+                            <table style="display: none" data-url="https://api.github.com/repos/{{ site.github_organization }}/{{ site.github_repository }}/issues?state=open&labels=GSoC-2022" class="table {{ post.title }}-table">
+                                <caption class="fw-300">Participate in the issue corresponding to this project to get started</caption>
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center">
+                            <a href="{{ post.website }}" target="_blank"><i class="fa fa-rss-square fa-2x icon-mentoring"></i></a>
+                            <a href="{{ post.github }}" target="_blank"><i class="fa fa-github fa-2x icon-mentoring"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-pull-6  col-sm-6">
+                      <img class="img-responsive" src="../img/projects/{{ post.img }}" alt="">
+                    </div>
+                </div>
+            <!-- /.container -->
+        </div>
+      </section>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+{% include mentor.html %}
+{% include mentor_process.html %}

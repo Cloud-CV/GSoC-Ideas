@@ -1,0 +1,28 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+title: CloudCV
+subTitle: 
+email: rishabhjain@gatech.edu
+author: Rishabh Jain
+description: The CloudCV mentoring project collects ideas for Google Summer of Code.
+copyright: 'Copyright &copy; 2020 CloudCV. All Rights Reserved.'
+
+baseurl: ""
+url: "http://gsoc.cloudcv.org"
+
+github_organization: Cloud-CV
+github_repository: GSoC-Ideas
+gems:
+  - jekyll-redirect-from
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+collections:
+- gsoc_current

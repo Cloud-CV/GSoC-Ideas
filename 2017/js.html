@@ -1,0 +1,35 @@
+<!-- jQuery Version 1.11.0 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="{{ site.baseurl }}/js/landing-page.js"></script>
+<script src="{{ site.baseurl }}/js/markdown.js"></script>
+<script src="{{ site.baseurl }}/js/github.js"></script>
+<!-- <script src="js/redirect.js"></script>
+<script src="../js/redirect.js"></script> -->
+<script type="text/javascript">
+function get_gsoc_hint(labels){
+  result = "";
+  current_url = window.location.href;
+  for(var i = 0; i < labels.length; i++) {
+    if (labels[i].name == 'GSoC-2017') {
+      if(current_url.indexOf('gsoc') > -1) {
+        url = current_url;
+      }
+      else{
+        url = current_url + "/gsoc";
+      }
+      result = "<p>You can do this project as part of the Google Summer of Code program. Click <a href='" + url + "'>here</a> for more information.</p>"
+      break;
+    }
+  }
+  return result;
+}
+
+</script>
