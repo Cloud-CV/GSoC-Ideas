@@ -1,7 +1,7 @@
 ---
 layout: default
 img: user-experience-leaderboard-integrations.png
-title: Seamless User Experience and Enhanced Leaderboard Integrations
+title: Seamless User Experience & Leaderboard Porting
 type: project-2024
 technologies: [Angular, Django, SQL, AWS]
 website: https://eval.ai
@@ -14,3 +14,7 @@ The project also aims to enhance user-centric aspects by implementing customizab
 
 Additionally, it addresses technical improvements like fixing search and filter features, automating challenge category/forum creation, and resolving issues with pod log population on AWS.
 Overall, these deliverables aim to provide users with a more efficient and enriched participation experience on EvalAI.
+
+**Project Size**: Medium (175 hours)
+
+**Difficulty Rating**: Medium
