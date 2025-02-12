@@ -1,0 +1,32 @@
+<div class="col-md-4 col-sm-6">
+  <img alt="" class="img-responsive img-thumbnail" src="/img/projects/{{ project.img }}">
+  <div class="portfolio-caption">
+    <h4>{{ project.title }}</h4>
+    <p>
+      {{ project.content }}
+    </p>
+    <dl>
+      <dt>Mentor:</dt>
+      <dd>
+        {% for mentor in project.mentors %}
+          {% if mentor.github %}
+            <a href="https://github.com/{{mentor.github}}">{{mentor.name}}</a>
+          {% else %}
+            {{mentor.name}}
+          {% endif %}
+          {% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </dd>
+      <dt>Mentee:</dt>
+      <dd>
+        {% for mentee in project.mentees %}
+          {% if mentee.github %}
+            <a href="https://github.com/{{mentee.github}}">{{ mentee.name }}</a>
+          {% else %}
+            {{mentee.name}}
+          {% endif %}
+        {% endfor %}
+      </dd>
+    </dl>
+  </div>
+</div>
