@@ -1,0 +1,15 @@
+services:
+  jekyll:
+    image: jekyll/jekyll:4.2.2
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/srv/jekyll
+      - bundle_cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development
+    command: jekyll serve --force_polling --livereload
+
+volumes:
+  bundle_cache:
