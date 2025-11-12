@@ -1,0 +1,56 @@
+name: Build and Test Jekyll Site
+
+on:
+  push:
+    branches: [ gh-pages ]
+  pull_request:
+    branches: [ gh-pages ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.1'
+        bundler-cache: true
+        
+    - name: Install dependencies
+      run: bundle install
+      
+    - name: Build Jekyll site
+      run: bundle exec jekyll build
+      env:
+        JEKYLL_ENV: production
+        
+    - name: Check HTML
+      uses: chabad360/htmlproofer@master
+      with:
+        directory: "./_site"
+        arguments: --ignore-urls "/localhost/,/127.0.0.1/,/gsoc.cloudcv.org/" --allow-hash-href --disable-external
+      continue-on-error: true
+      
+    - name: Upload site artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: jekyll-site
+        path: _site/
+        retention-days: 7
+
+  link-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Link Checker
+      uses: lycheeverse/lychee-action@v1
+      with:
+        args: --verbose --no-progress --accept 200,403,429 --exclude-mail './**/*.md' './**/*.html'
+      continue-on-error: true
